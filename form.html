@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and Links -->
+    <meta charset="UTF-8"> <!-- Ensures proper encoding for special characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on all devices -->
+    <link rel="stylesheet" href="CSS/form.css"> <!-- Links to the external CSS file for styling -->
+    <title>Newsletter Signup</title> <!-- Sets the title of the webpage -->
+    <script>
+        // JavaScript function to display a welcome message when the page loads
+        window.onload = function() {
+            alert("Welcome to the Tourism Corporation Newsletter Signup");
+        };
+
+        // JavaScript function to validate the form before submission
+        function validateForm() {
+            const firstName = document.forms["signup"]["firstName"].value; // Retrieves the value of the "First Name" field
+            const lastName = document.forms["signup"]["lastName"].value; // Retrieves the value of the "Last Name" field
+
+            // Checks if the "First Name" or "Last Name" fields are empty
+            if (firstName === "" || lastName === "") {
+                alert("First Name and Last Name are required."); // Displays an error message
+                return false; // Prevents form submission
+            }
+            return true; // Allows form submission if validation passes
+        }
+    </script>
+</head>
+<body>
+    <!-- Main Heading -->
+    <h1>Tourism Corporation Newsletter Signup</h1> <!-- Title of the form -->
+
+    <!-- Form Section -->
+    <form name="signup" action="http://csusap.csu.edu.au/cgi-bin/echo_form" method="post" onsubmit="return validateForm()">
+        <!-- First Name Field -->
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" maxlength="60" required><br><br> <!-- Input field for the user's first name -->
+
+        <!-- Last Name Field -->
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" maxlength="60" required><br><br> <!-- Input field for the user's last name -->
+
+        <!-- Email Address Field -->
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" maxlength="60" required><br><br> <!-- Input field for the user's email address -->
+
+        <!-- Age Range Selection -->
+        <label>Age Range:</label><br>
+        <input type="radio" id="age1" name="age" value="15-25" required> <!-- Radio button for age range 15-25 -->
+        <label for="age1">15-25</label>
+        <input type="radio" id="age2" name="age" value="26-35"> <!-- Radio button for age range 26-35 -->
+        <label for="age2">26-35</label>
+        <input type="radio" id="age3" name="age" value="36-45"> <!-- Radio button for age range 36-45 -->
+        <label for="age3">36-45</label>
+        <input type="radio" id="age4" name="age" value="46-55"> <!-- Radio button for age range 46-55 -->
+        <label for="age4">46-55</label>
+        <input type="radio" id="age5" name="age" value="55+"> <!-- Radio button for age range 55+ -->
+        <label for="age5">55+</label><br><br>
+
+        <!-- Services Selection -->
+        <label>Services:</label><br>
+        <input type="checkbox" id="service1" name="services" value="Adventure Tours"> <!-- Checkbox for Adventure Tours -->
+        <label for="service1">Adventure Tours</label>
+        <input type="checkbox" id="service2" name="services" value="Cultural Experiences"> <!-- Checkbox for Cultural Experiences -->
+        <label for="service2">Cultural Experiences</label>
+        <input type="checkbox" id="service3" name="services" value="Luxury Getaways"> <!-- Checkbox for Luxury Getaways -->
+        <label for="service3">Luxury Getaways</label>
+        <input type="checkbox" id="service4" name="services" value="Customized Itineraries"> <!-- Checkbox for Customized Itineraries -->
+        <label for="service4">Customized Itineraries</label>
+        <input type="checkbox" id="service5" name="services" value="Travel Insurance"> <!-- Checkbox for Travel Insurance -->
+        <label for="service5">Travel Insurance</label><br><br>
+
+        <!-- Comments Section -->
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" cols="60" rows="3"></textarea><br><br> <!-- Text area for additional comments -->
+
+        <!-- Submit and Reset Buttons -->
+        <input type="submit" value="Submit"> <!-- Button to submit the form -->
+        <input type="reset" value="Reset"> <!-- Button to reset the form -->
+    </form>
+</body>
+</html>

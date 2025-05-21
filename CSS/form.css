@@ -1,0 +1,65 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #00ced1;
+}
+
+/* Form Container */
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block; /* Ensures labels don't overflow */
+    margin-bottom: 5px; /* Adds spacing between label and input */
+}
+
+/* Input Fields and Textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Ensures inputs take up full width of the form */
+    padding: 10px;
+    margin: 5px 0 15px 0; /* Adds vertical spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Includes padding and border in the element's total width */
+}
+
+/* Radio Buttons and Checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px; /* Adds spacing between radio buttons/checkboxes and labels */
+}
+
+/* Submit and Reset Buttons */
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00ced1;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px; /* Adds spacing above the buttons */
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #00b3b3;
+}

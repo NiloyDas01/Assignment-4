@@ -1,0 +1,223 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Use Arial font for the entire website */
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Light gradient background */
+    color: #333; /* Dark gray text color for readability */
+    margin: 0; /* Remove default margins around the page */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack content vertically */
+    min-height: 100vh; /* Ensure the page takes up the full screen height */
+}
+
+header {
+    background: linear-gradient(135deg, #4b0082, #00ced1); /* Indigo to teal gradient for the header */
+    color: white; /* White text for contrast */
+    padding: 20px; /* Add spacing inside the header */
+    text-align: center; /* Center align all text in the header */
+}
+
+h1 {
+    color: #00ced1; /* Teal color for headings */
+    text-align: center; /* Center align the heading */
+    font-size: 2rem; /* Large font size for the main title */
+    margin: 10px; /* Add some spacing around the heading */
+}
+
+p {
+    font-size: 16px; /* Standard text size */
+    line-height: 1.5; /* Add space between lines for better readability */
+}
+
+/* Center the logo */
+.logo-container {
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 10px; /* Add some space above the logo */
+}
+
+.logo-container img {
+    max-width: 100%; /* Make sure the logo doesn’t overflow its container */
+    height: auto; /* Keep the image proportions correct */
+}
+
+/* Navigation Bar */
+nav {
+    background: linear-gradient(135deg, #4b0082, #00ced1); /* Gradient background for the navigation bar */
+    padding: 40px 20px; /* Add spacing inside the navigation bar */
+    text-align: center; /* Center align the links */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+nav a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Add space between links */
+    padding: 10px 20px; /* Add spacing inside each button */
+    border-radius: 20px; /* Rounded corners for buttons */
+    background: linear-gradient(45deg, #3550ca, #01fbff); /* Gradient background for buttons */
+    font-family: 'Arial', sans-serif; /* Use Arial font */
+    font-weight: bold; /* Bold text for links */
+    transition: all 0.3s ease-in-out; /* Smooth animations for hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to buttons */
+}
+
+nav a:hover {
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    background: linear-gradient(135deg, #4b0082, #00ced1); /* Change gradient color on hover */
+    box-shadow: 0 6px 10px #00ced1; /* Add a glowing effect on hover */
+    text-shadow: 0 0 8px #4b0082; /* Add a glow effect to the text */
+}
+
+main {
+    flex: 1; /* Push the footer to the bottom of the page */
+    padding: 20px; /* Add spacing around the main content */
+}
+
+/* Footer Styles */
+#footer {
+    background: linear-gradient(135deg, #333, #444); /* Dark gradient background for the footer */
+    color: white; /* White text for contrast */
+    text-align: center; /* Center align the footer text */
+    padding: 10px; /* Add spacing inside the footer */
+    font-size: 14px; /* Smaller font size for the footer */
+}
+
+/* Ensure all links in the footer are white */
+#footer a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text for links */
+}
+
+/* Hover effect for footer links */
+#footer a:hover {
+    text-decoration: underline; /* Add underline when hovering over links */
+}
+
+/* Table Styles */
+.skills-table {
+    width: 100%; /* Make the table take up the full width */
+    border-collapse: collapse; /* Remove gaps between table borders */
+    margin: 20px 0; /* Add space above and below the table */
+    font-size: 16px; /* Standard text size for tables */
+    text-align: left; /* Align text to the left */
+}
+
+.skills-table th,
+.skills-table td {
+    padding: 12px; /* Add spacing inside table cells */
+    border: 1px solid #00ced1; /* Teal border for table cells */
+}
+
+.skills-table thead {
+    background: linear-gradient(135deg, #4b0082, #00ced1); /* Gradient background for table headers */
+    color: white; /* White text for headers */
+}
+
+.skills-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+.skills-table tbody tr:hover {
+    background-color: #f1f1f1; /* Highlight row when hovered */
+}
+
+/* Highlight Class */
+.highlight {
+    color: #000000; /* Black text for highlighted items */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Unordered List Styling */
+ul {
+    list-style-type: square; /* Use square bullets for lists */
+    list-style-position: inside; /* Keep markers inside the list */
+}
+
+/* Ordered List Styling */
+ol {
+    list-style-type: upper-roman; /* Use Roman numerals for ordered lists */
+    list-style-position: inside; /* Keep markers inside the list */
+}
+
+/* Styling the markers (bullets or Roman numerals) */
+ul li::marker,
+ol li::marker {
+    color: #00ced1; /* Teal color for list markers */
+    font-size: 1em; /* Match marker size with text */
+}
+
+/* Keeping the text color black */
+ul li,
+ol li {
+    color: black; /* Black text for list items */
+}
+
+
+
+/* Styling for the Open Form button */
+.open-form-btn {
+    background: linear-gradient(135deg, #4b0082, #00ced1); /* Gradient background */
+    color: white; /* White text */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    padding: 12px 24px; /* Padding for height and width */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.open-form-btn:hover {
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    background: linear-gradient(135deg, #00ced1, #4b0082); /* Reverse gradient on hover */
+    box-shadow: 0 6px 10px #00ced1; /* Add a glowing effect on hover */
+    text-shadow: 0 0 8px #4b0082; /* Add a glow effect to the text */
+}
+
+/* Print-Friendly Styles */
+@media print {
+    body {
+        background: none; /* Remove background colors for printing */
+        color: black; /* Black text for better readability */
+        font-size: 18px; /* Larger font size for printed pages */
+    }
+
+    nav, header, footer {
+        display: none; /* Hide navigation, header, and footer when printing */
+    }
+
+    /* Ensure tables retain their borders and colors */
+    .skills-table th,
+    .skills-table td {
+        border: 1px solid #00ced1 !important; /* Keep teal borders for tables */
+        color: black; /* Black text for table cells */
+    }
+
+    .skills-table thead {
+        background: #00ced1 !important; /* Teal background for table headers */
+        color: white; /* White text for headers */
+    }
+
+    /* Ensure links are visible and underlined */
+    a {
+        color: #00ced1 !important; /* Teal text for links */
+        text-decoration: underline; /* Underline links for clarity */
+    }
+
+    /* Ensure list markers are visible */
+    ul li::marker,
+    ol li::marker {
+        color: #00ced1 !important; /* Teal markers for lists */
+    }
+
+    /* Ensure highlights are visible */
+    .highlight {
+        color: #000000 !important; /* Black text for highlights */
+        font-weight: bold; /* Bold text for emphasis */
+    }
+}
+
